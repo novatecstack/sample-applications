@@ -1,7 +1,8 @@
 # Specify a base image
-FROM alpine
+FROM node:14-apline
 
 # Install some depenendencies
+COPY ./ ./
 RUN npm install
 
 # Default command
